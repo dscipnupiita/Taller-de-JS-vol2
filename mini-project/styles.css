@@ -15,6 +15,7 @@ body {
 
 .title {
   margin: 3em;
+  margin-bottom: 1em;
   font-size: 2em;
   text-shadow: 0.08em 0.08em #ea3788;
 }
@@ -34,7 +35,7 @@ body {
   align-items: center;
 }
 
-.previous__card, .final__card {
+.previous__card {
   width: 60%;
   height: 6em;
   border-radius: 10px;
@@ -65,7 +66,23 @@ body {
   display: none;
 }
 
+.final__card {
+  width: 80%;
+  border-radius: 10px;
+  padding: 1em;
+}
+
 .final__card--details {
   list-style: none;
   padding: 0;
+}
+
+.final__card--details  strong {
+  text-shadow: 0.08em 0.08em #ea3788;
+}
+
+.final__card--img {
+  width: 90%;
+  box-shadow: 5px 5px #ea3788;
+  border-radius: 5px; 
 }

@@ -1,14 +1,14 @@
 # Taller de JavaScript Vol.2
+**En este repositorio podrás encontrar el contenido del taller de JavaScript del DSC-UPIITA**
 
 [![N|Solid](https://res.cloudinary.com/startup-grind/image/upload/dpr_2.0,fl_sanitize/v1/gcs/platform-data-dsc/contentbuilder/logo_hPnue3j.svg)](https://dsc.community.dev/national-polytechnic-institute-of-mexico-upiita/)
 
 Segunda parte del taller de JavaScript del DSC en el que veremos lo que nos hizo falta del primero, retomaremos los tipos de variable y funciones para entrar del lleno a hoisting y scope, generadores, getters y setters, hablaremos del Event Loop y la Asincronia de Javascript, la cual pondemos en practica para realizar juntos un mini proyecto que podran encontrar completo en los archivos de este repo. 
 
-**En este repositorio podrás encontrar el contenido del taller básico de JavaScript del DSC-UPIITA**
 
 ---
 
-### Recursos:
+### Recursos
   <!-- - [Instalacion de Node](https://fb.watch/1j-JZ3bg2i/)
   - [La cocina del codigo](https://www.youtube.com/c/LaCocinadelC%C3%B3digo)
   - [Leonidas Estevan](https://www.youtube.com/c/LeonidasEsteban)
@@ -32,3 +32,4 @@ Segunda parte del taller de JavaScript del DSC en el que veremos lo que nos hizo
 | ------ | ------ |
 | Facebook| [Developer Student Club Facebook](https://www.facebook.com/dscipnupiita) |
 | Instram | [Developer Student Club Instagram](https://www.instagram.com/dscipnupiita/) |
+| Twitter | [Developer Student Club Twitter](https://twitter.com/dscipnupiita) |
