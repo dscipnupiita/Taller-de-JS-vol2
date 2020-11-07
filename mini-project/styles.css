@@ -86,3 +86,33 @@ body {
   box-shadow: 5px 5px #ea3788;
   border-radius: 5px; 
 }
+
+#load {
+	display: none;
+	align-items: center;
+	justify-content: space-around;
+	width: 150px;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	color: white;
+  position: relative;
+  margin: 6em;
+}
+
+#load img {
+	height: 70%;
+}
+
+.rotate {
+	animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}

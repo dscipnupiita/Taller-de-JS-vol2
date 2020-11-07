@@ -3,8 +3,7 @@
 async function personajeAleatorio() {
   const aleatorio = numeroAleatorio(1,500);
   const respuesta = await fetch(`https://rickandmortyapi.com/api/character/${aleatorio}`);
-  const miPersoanje = await respuesta.json();
-  return miPersoanje;
+  return await respuesta.json();
 }
 
 function numeroAleatorio(min, max) {
@@ -12,11 +11,13 @@ function numeroAleatorio(min, max) {
 }
 
 window.guess.addEventListener('click', async () => {
-  const personaje = await personajeAleatorio();
   document.getElementById('prev').style.display = 'none';
+  document.getElementById('load').style.display = 'flex'
+  const personaje = await personajeAleatorio();
+  document.getElementById('image').src = personaje.image;
+  document.getElementById('load').style.display = 'none';
   document.getElementById('next').style.display = 'flex';
   document.getElementById('name').innerText = `¡Eres ${personaje.name}!`;
-  document.getElementById('image').src = personaje.image;
   
   const details = []
   
