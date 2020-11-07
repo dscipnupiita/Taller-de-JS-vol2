@@ -14,7 +14,7 @@ body {
 }
 
 .title {
-  margin: 3em;
+  margin: 2em;
   margin-bottom: 1em;
   font-size: 2em;
   text-shadow: 0.08em 0.08em #ea3788;
@@ -27,6 +27,8 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 5px 5px #f0f757;
+  width: 30vw;
+  margin-bottom: 2em;
 }
 
 .previous, .final {
@@ -36,12 +38,11 @@ body {
 }
 
 .previous__card {
-  width: 60%;
   height: 6em;
   border-radius: 10px;
 }
 
-.previous__card--button {
+.previous__card--button, .final__button {
   width: 50%;
   height: 50%;
   border: 1px solid;
@@ -53,12 +54,12 @@ body {
   transition: 0.4s;
 }
 
-.previous__card--button:hover{
+.previous__card--button:hover, .final__button:hover{
   color: #202020;
   background: #f2f2f2;
 }
 
-.previous__card--button:active {
+.previous__card--button:active, .final__button:active{
   transform: scale(1.1);
 }
 
@@ -67,7 +68,6 @@ body {
 }
 
 .final__card {
-  width: 80%;
   border-radius: 10px;
   padding: 1em;
 }
