@@ -115,9 +115,34 @@ El objeto `Generator` es retornado por una función generator y es conformado ta
 ```
 
 ### `event loop`
+Es cómo JavaScript ejecuta tareas. Una propiedad muy interesante de este modelo es que JavaScript, a diferencia de otros lenguajes, nunca interrumpe otros programas en ejecución.
 
+```javascript
+  (function () {
 
+    console.log('this is the start');
 
+    setTimeout(function cb() {
+      console.log('this is a msg from call back');
+    });
+
+    console.log('this is just a message');
+
+    setTimeout(function cb1() {
+      console.log('this is a msg from call back1');
+    }, 0);
+
+    console.log('this is the  end');
+
+  })();
+
+  // "this is the start" 
+  // "this is just a message" 
+  // "this is the end" 
+  // cabe notar que la función retorna en este punto (undefined)  
+  // "this is a msg from call back" 
+  // "this is a msg from call back1"
+```
 ### `asincronia` (en JS):
 
 Tarde o temprano necesitaremos realizar operaciones asíncronas, especialmente en ciertos lenguajes como Javascript, donde tenemos que realizar tareas que tienen que esperar a que ocurra un determinado suceso que no depende de nosotros, y reaccionar realizando otra tarea sólo cuando dicho suceso ocurra.
